@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -31,7 +32,26 @@ namespace Note_Taking_Application
     {
         public MainWindow()
         {
-            InitializeComponent(); 
+            InitializeComponent();
+            
+        }
+
+        // Function for writing notes
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        // Button for navigating back
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        // Button for saving notes. 
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
