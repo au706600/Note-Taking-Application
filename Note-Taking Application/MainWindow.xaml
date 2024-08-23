@@ -5,8 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Note_Taking_Application"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="700" Width="1006">
     <Grid>
+        <ToolBar Margin="10,0,10,574"/>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="102,32,0,0" VerticalAlignment="Top" Height="47" Width="77" RenderTransformOrigin="0.437,1.369"/>
+        <Button Content="Save" HorizontalAlignment="Right" Margin="0,32,147,0" VerticalAlignment="Top" Height="47" Width="77" RenderTransformOrigin="0.437,1.369"/>
 
     </Grid>
 </Window>
