@@ -52,7 +52,14 @@ namespace Note_Taking_Application
         // Textbox for writing notes
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-
+            notebox.VerticalScrollBarVisibility = ScrollBarVisibility.Visible;
+            notebox.SpellCheck.IsEnabled = true;
+            // Set it as default background color
+            this.grid.Background = new SolidColorBrush(Colors.RosyBrown);
+            // multiline of notes, if written in C#
+            // notebox.AcceptsReturn= true;
+            // Causes entered text to wrap to a new line when the edge of the textbox control is reached, if in C#
+            // notebox.TextWrapping= TextWrapping.Wrap; 
         }
     }
 }

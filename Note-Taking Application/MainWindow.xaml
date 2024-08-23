@@ -5,12 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Note_Taking_Application"
         mc:Ignorable="d"
-        Title="MainWindow" Height="700" Width="1006">
-    <Grid Margin="10,10,0,0">
-        <ToolBar Margin="0,0,10,574"/>
-        <Button Content="Back" HorizontalAlignment="Left" Margin="102,32,0,0" VerticalAlignment="Top" Height="47" Width="77" RenderTransformOrigin="0.437,1.369" Click="Button_Click"/>
-        <Button Content="Save" HorizontalAlignment="Right" Margin="0,32,147,0" VerticalAlignment="Top" Height="47" Width="77" RenderTransformOrigin="0.437,1.369" Click="Button_Click_1"/>
-        <TextBox HorizontalAlignment="Center" Margin="0,105,0,0" AcceptsReturn="True" VerticalScrollBarVisibility="Visible" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="996" Height="559" TextChanged="TextBox_TextChanged"/>
+        Title="MainWindow" Height="721" Width="916">
+    <Grid x:Name="grid" Margin="10,10,10,0" Background="RosyBrown">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="138*"/>
+            <RowDefinition Height="31*"/>
+            <RowDefinition Height="307*"/>
+            <RowDefinition Height="219*"/>
+        </Grid.RowDefinitions>
+        <ToolBar Margin="0,0,10,17"/>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="78,22,0,0" VerticalAlignment="Top" Height="47" Width="77" RenderTransformOrigin="0.437,1.369" Click="Button_Click"/>
+        <Button Content="Save" HorizontalAlignment="Right" Margin="0,22,141,0" VerticalAlignment="Top" Height="47" Width="77" RenderTransformOrigin="0.437,1.369" Click="Button_Click_1"/>
+        <TextBox x:Name="notebox" HorizontalAlignment="Center" Margin="0,20,0,0" AcceptsReturn="True" TextWrapping="Wrap" Width="704" TextChanged="TextBox_TextChanged" Text="" RenderTransformOrigin="0.499,0.516" Height="487" VerticalAlignment="Top" Grid.RowSpan="3" Grid.Row="1"/>
 
 
     </Grid>
