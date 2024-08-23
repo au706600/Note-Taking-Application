@@ -36,11 +36,6 @@ namespace Note_Taking_Application
             
         }
 
-        // Function for writing notes
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
 
         // Button for navigating back
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -50,6 +45,12 @@ namespace Note_Taking_Application
 
         // Button for saving notes. 
         private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        // Textbox for writing notes
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
 
         }

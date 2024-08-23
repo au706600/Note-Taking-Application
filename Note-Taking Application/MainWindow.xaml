@@ -6,11 +6,12 @@
         xmlns:local="clr-namespace:Note_Taking_Application"
         mc:Ignorable="d"
         Title="MainWindow" Height="700" Width="1006">
-    <Grid>
+    <Grid Margin="10,10,0,0">
         <ToolBar Margin="0,0,10,574"/>
         <Button Content="Back" HorizontalAlignment="Left" Margin="102,32,0,0" VerticalAlignment="Top" Height="47" Width="77" RenderTransformOrigin="0.437,1.369" Click="Button_Click"/>
         <Button Content="Save" HorizontalAlignment="Right" Margin="0,32,147,0" VerticalAlignment="Top" Height="47" Width="77" RenderTransformOrigin="0.437,1.369" Click="Button_Click_1"/>
-        <TextBox HorizontalAlignment="Left" Margin="10,115,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="996" Height="559" TextChanged="TextBox_TextChanged"/>
+        <TextBox HorizontalAlignment="Center" Margin="0,105,0,0" AcceptsReturn="True" VerticalScrollBarVisibility="Visible" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="996" Height="559" TextChanged="TextBox_TextChanged"/>
+
 
     </Grid>
 </Window>
