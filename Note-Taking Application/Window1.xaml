@@ -1,0 +1,15 @@
+﻿<Window x:Class="Note_Taking_Application.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Note_Taking_Application"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="732">
+    <Grid x:Name="dfdf">
+        <TextBlock HorizontalAlignment="Left" Margin="65,18,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="55" Width="231" FontSize="34"><Run Language="da-dk" Text="Notes"/></TextBlock>
+        <ListBox x:Name="Lists_of_Notes" d:ItemsSource="{d:SampleData ItemCount=0}" Margin="65,78,105,96" SelectionChanged="Lists_of_Notes_SelectionChanged"/>
+        <Button x:Name="Add_btn" Content="Add" HorizontalAlignment="Left" Margin="561,367,0,0" VerticalAlignment="Top" Height="40" Width="66" Click="Add_btn_Click"/>
+
+    </Grid>
+</Window>

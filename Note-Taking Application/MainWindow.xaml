@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Note_Taking_Application"
         mc:Ignorable="d"
         Title="MainWindow" Height="721" Width="916">
-    <Grid x:Name="grid" Margin="10,10,10,0" Background="RosyBrown">
+    <Grid x:Name="grid" Margin="10,10,-64,0" Background="RosyBrown">
         <Grid.RowDefinitions>
             <RowDefinition Height="138*"/>
             <RowDefinition Height="31*"/>
@@ -15,7 +15,7 @@
         </Grid.RowDefinitions>
         <ToolBar Margin="0,0,10,17"/>
         <Button Content="Back" HorizontalAlignment="Left" Margin="78,22,0,0" VerticalAlignment="Top" Height="47" Width="77" RenderTransformOrigin="0.437,1.369" Click="Button_Click"/>
-        <Button Content="Save" HorizontalAlignment="Right" Margin="0,22,141,0" VerticalAlignment="Top" Height="47" Width="77" RenderTransformOrigin="0.437,1.369" Click="Button_Click_1"/>
+        <Button x:Name="Save_btn" Content="Save" HorizontalAlignment="Right" Margin="0,22,141,0" VerticalAlignment="Top" Height="47" Width="77" RenderTransformOrigin="0.437,1.369" Click="Button_Click_1"/>
         <TextBox x:Name="notebox" HorizontalAlignment="Center" Margin="0,20,0,0" AcceptsReturn="True" TextWrapping="Wrap" Width="704" TextChanged="TextBox_TextChanged" Text="" RenderTransformOrigin="0.499,0.516" Height="487" VerticalAlignment="Top" Grid.RowSpan="3" Grid.Row="1"/>
 
 
