@@ -23,19 +23,27 @@ namespace Note_Taking_Application
     /// </summary>
    
     /// As bare minimum:
-    /// 1) Add notes 
-    /// 2) Save notes (temporary or permanent) through a button of sort.
+    /// 1) Add notes - Check
+    /// 2) Save notes (temporary or permanent) through a button of sort - Check
+    /// 3) Navigating back - Check
     
     /// Optional features: 
     /// 1) Add photos
-    /// 2) A list of note sections that are basically fetched or "displayed" on the start side. 
+    /// 2) A list of note sections that are basically fetched or "displayed" on the start side - Check
    
     public partial class MainWindow : Window
     {
-        string file = "notes.txt";
-        public MainWindow()
+        // Use this as a way to keep storing note strings to files, i.e. note1, note2, etc. 
+        string file;
+        private Window1 window1Current;
+        public MainWindow(string noteFileName, Window1 window1)
         {
             InitializeComponent();
+
+            // Add this line as a way to help navigating to the MainWindow initial state each time, we click
+            // on new item. 
+            file = noteFileName; 
+            window1Current = window1;
 
             // Check if file exists. 
             if (File.Exists(file))
@@ -51,7 +59,8 @@ namespace Note_Taking_Application
         // Button for navigating back
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            
+            window1Current.Show();
+            Close();
         }
 
         // Button for saving notes. 
@@ -61,13 +70,12 @@ namespace Note_Taking_Application
             // it will be overwritten. 
             File.WriteAllText(file, notebox.Text);
             // As a confirmation, display this message to the user. 
-            MessageBox.Show("Your notes are successfully saved :)");
+            MessageBox.Show("Your notes are successfully saved to: " + file);
         }
 
         // Textbox for writing notes
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            
+        {   
             notebox.VerticalScrollBarVisibility = ScrollBarVisibility.Visible;
             notebox.SpellCheck.IsEnabled = true;
             // Set it as default background color
